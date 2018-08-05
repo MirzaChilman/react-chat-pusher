@@ -37,7 +37,7 @@ app.post("/authenticate", (req, res) => {
   res.status(authData.status).send(authData.body);
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 // app.listen(port || process.env.PORT, process.env.IP , () => {
 app.listen(port, process.env.IP, () => {
   console.log(`Server Started on Port ${port}`);
